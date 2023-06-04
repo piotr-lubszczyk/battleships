@@ -10,7 +10,6 @@ public class BoardView
     private readonly IEnumerable<Ship> _ships;
     private readonly string _columnHeaders;
 
-
     public BoardView(Grid grid, IEnumerable<Ship> ships)
     {
         _grid = grid;

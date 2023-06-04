@@ -32,7 +32,6 @@ public class Game
         _boardView.Draw();
     }
 
-
     public void Play()
     {
         _errorMessage = null;

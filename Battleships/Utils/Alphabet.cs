@@ -2,7 +2,6 @@ namespace Battleships.Utils
 {
     public static class Alphabet
     {
-        private const string ALPHABET_STRING = "abcdefghijklmnopqrstuvwxyz";
-        public static char[] CharArray => ALPHABET_STRING.ToCharArray();
+        public static char[] CharArray => Enumerable.Range('a', 26).Select(Convert.ToChar).ToArray();
     }
 }
