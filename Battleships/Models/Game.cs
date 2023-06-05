@@ -39,7 +39,7 @@ public class Game
         var input = Console.ReadLine();
         var parsedInput = _inputParser.Parse(input);
 
-        if (parsedInput != null)
+        if (parsedInput is not null)
             _grid.MarkTile(parsedInput);
 
         _boardView.Draw(_errorMessage);

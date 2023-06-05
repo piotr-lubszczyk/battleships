@@ -15,7 +15,7 @@ public class InputParser
 
     public Coordinates? Parse(string? input)
     {
-        if (input == null)
+        if (input is null)
         {
             _setErrorMessage(ErrorMessages.NULL_INPUT);
             return null;
